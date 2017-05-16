@@ -32,8 +32,19 @@ function myInfo() {
 	
 }
 var dataNow = new Date();
-var mojaData = new Date(dataNow.getFullYear(), dataNow.getMonth(), dataNow.getDate(), dataNow.getHours(), dataNow.getMinutes(), dataNow.getSeconds() + 10, dataNow.getMilliseconds())
+var mojaData = new Date(dataNow.getFullYear(), dataNow.getMonth(), dataNow.getDate(), dataNow.getHours(), dataNow.getMinutes(), dataNow.getSeconds() + 10, dataNow.getMilliseconds());
 
+
+cordova.plugins.notification.local.schedule({
+  id         : 1,
+  title      : 'I will bother you every minute',
+  text       : '.. until you cancel all notifications',
+  sound      : null,
+  every      : 'minute',
+  autoClear  : false,
+  at         : new Date(new Date().getTime() + 10*1000)
+});
+/*
 cordova.plugins.notification.local.schedule({
     id: 1,
     title: "New Message",
@@ -41,3 +52,4 @@ cordova.plugins.notification.local.schedule({
     firstAt: new Date(new Date().getTime() + 10*1000),
     every: "minute"//, "hour", "week", "month", "year"
 })
+*/
