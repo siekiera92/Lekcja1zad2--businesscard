@@ -36,8 +36,8 @@ function myInfo() {
 
 alert("coś kurwa");
 
-var now                  = new Date().getTime(),
-    _60_seconds_from_now = new Date(now + 5*1000);
+var now = new Date().getTime();
+var _60_seconds_from_now = new Date(now + 5*1000);
 
 window.plugin.notification.local.add({
     id:      1,
