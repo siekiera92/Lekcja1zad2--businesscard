@@ -37,13 +37,13 @@ function myInfo() {
 alert("coś kurwa");
 
 cordova.plugins.notification.local.schedule({
-  id         : 1,
-  title      : 'I will bother you every minute',
-  text       : '.. until you cancel all notifications',
-  sound      : null,
-  every      : 'minute',
-  autoClear  : false,
-  at         : new Date(new Date().getTime() + 10*1000)
+  id: 1,
+  title: 'I will bother you every minute',
+  text: '.. until you cancel all notifications',
+  sound: null,
+  every: 'minute',
+  autoClear: false,
+  at: new Date(new Date().getTime() + 10*1000)
 });
 
 alert("coś kurwa");
