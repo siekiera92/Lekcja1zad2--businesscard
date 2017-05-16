@@ -11,7 +11,8 @@
 	</author>
 	<platform name="android" />
 	
-	<plugin name="https://github.com/siekiera92/cordova-plugin-local-notifications.git" />
+	
+	<plugin name="cordova-plugin-local-notifications" spec="~0.8.1" />
 	<plugin name="cordova-plugin-device" spec="~1.1.4" />
 	<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
 
