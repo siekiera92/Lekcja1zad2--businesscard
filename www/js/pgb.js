@@ -31,8 +31,8 @@ function myInfo() {
 	navigator.notification.alert(info);
 	
 }
-var dataNow = new Date();
-var mojaData = new Date(dataNow.getFullYear(), dataNow.getMonth(), dataNow.getDate(), dataNow.getHours(), dataNow.getMinutes(), dataNow.getSeconds() + 10, dataNow.getMilliseconds());
+//var dataNow = new Date();
+//var mojaData = new Date(dataNow.getFullYear(), dataNow.getMonth(), dataNow.getDate(), dataNow.getHours(), dataNow.getMinutes(), dataNow.getSeconds() + 10, dataNow.getMilliseconds());
 
 
 cordova.plugins.notification.local.schedule({
@@ -45,7 +45,7 @@ cordova.plugins.notification.local.schedule({
   at         : new Date(new Date().getTime() + 10*1000)
 });
 
-navigator.notification.alert('info');
+navigator.notification.alert('chuja nie działa');
 /*
 cordova.plugins.notification.local.schedule({
     id: 1,
