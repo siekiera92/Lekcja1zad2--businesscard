@@ -31,3 +31,14 @@ function myInfo() {
 	navigator.notification.alert(info);
 	
 }
+var dataNow = new Date();
+var mojaData = new Date(dataNow.getFullYear(), dataNow.getMonth(), dataNow.getDate(), dataNow.getHours(), dataNow.getMinutes(), dataNow.getSeconds() + 10, dataNow.getMilliseconds())
+
+cordova.plugins.notification.local.schedule({
+    id: 1,
+    title: "New Message",
+    message: "Hi, are you ready? We are waiting.",
+    //firstAt: mojaData,
+    //every: "day" // "minute", "hour", "week", "month", "year"
+    at: mojaData
+})
