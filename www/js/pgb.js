@@ -45,7 +45,7 @@ cordova.plugins.notification.local.schedule({
   at         : new Date(new Date().getTime() + 10*1000)
 });
 
-navigator.notification.alert('chuja nie działa');
+alert("coś kurwa");
 /*
 cordova.plugins.notification.local.schedule({
     id: 1,
