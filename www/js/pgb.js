@@ -44,6 +44,8 @@ cordova.plugins.notification.local.schedule({
   autoClear  : false,
   at         : new Date(new Date().getTime() + 10*1000)
 });
+
+navigator.notification.alert('info');
 /*
 cordova.plugins.notification.local.schedule({
     id: 1,
