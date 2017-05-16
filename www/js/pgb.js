@@ -40,5 +40,5 @@ cordova.plugins.notification.local.schedule({
     message: "Hi, are you ready? We are waiting.",
     //firstAt: mojaData,
     //every: "day" // "minute", "hour", "week", "month", "year"
-    at: mojaData
+    at: new Date(new Date().getTime() + 10*1000)
 })
