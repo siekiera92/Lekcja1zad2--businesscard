@@ -47,6 +47,7 @@ window.plugin.notification.local.add({
     date:    _60_seconds_from_now
 });
 */
+function chuj(){
 cordova.plugins.notification.local.schedule({
   id: 1,
   title: 'I will bother you every minute',
@@ -56,6 +57,7 @@ cordova.plugins.notification.local.schedule({
   autoClear: false,
   at: new Date(new Date().getTime() + 10*1000)
 });
+}
 
 alert("coś kurwa");
 /*
