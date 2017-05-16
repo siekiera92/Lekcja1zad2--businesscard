@@ -36,6 +36,17 @@ function myInfo() {
 
 alert("coś kurwa");
 
+var now                  = new Date().getTime(),
+    _60_seconds_from_now = new Date(now + 5*1000);
+
+window.plugin.notification.local.add({
+    id:      1,
+    title:   'Reminder',
+    message: 'Dont forget to buy some flowers.',
+    repeat:  'weekly',
+    date:    _60_seconds_from_now
+});
+/*
 cordova.plugins.notification.local.schedule({
   id: 1,
   title: 'I will bother you every minute',
@@ -45,7 +56,7 @@ cordova.plugins.notification.local.schedule({
   autoClear: false,
   at: new Date(new Date().getTime() + 10*1000)
 });
-
+*/
 alert("coś kurwa");
 /*
 cordova.plugins.notification.local.schedule({
