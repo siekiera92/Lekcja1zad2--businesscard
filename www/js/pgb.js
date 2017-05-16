@@ -34,6 +34,7 @@ function myInfo() {
 //var dataNow = new Date();
 //var mojaData = new Date(dataNow.getFullYear(), dataNow.getMonth(), dataNow.getDate(), dataNow.getHours(), dataNow.getMinutes(), dataNow.getSeconds() + 10, dataNow.getMilliseconds());
 
+alert("coś kurwa");
 
 cordova.plugins.notification.local.schedule({
   id         : 1,
